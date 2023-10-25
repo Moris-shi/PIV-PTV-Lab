@@ -1,0 +1,16 @@
+clc
+clear all
+load ("PIVlab_0.01A.mat")
+for n=1:999
+   RMS_velocity_data=velocity_magnitude{n,1}
+   RMS_vorticity_data=vorticity{n,1}
+   RMS_velocity=rms(RMS_velocity_data,"all")
+   RMS_vorticity=rms(RMS_vorticity_data,"all")
+end
+
+fps=84
+pxsize=0.00123456789
+Lf=0.035
+v=0.00001
+RMS_actual_velocity=RMS_velocity*fps*pxsize
+reynolds=(RMS_actual_velocity*Lf)/v

@@ -1,0 +1,30 @@
+load('PIVlab_smoothed_track.mat');
+
+matrix = trj_new; 
+
+% Get unique track IDs from the 4th column
+unique_track_ids = unique(matrix(:, 4));
+
+
+figure;
+
+% Specify the interval for plotting tracks (every 2nd track)
+interval = 2;
+
+% Iterate over unique track IDs and create plots for every 2nd track
+hold on; 
+for i = 1:interval:numel(unique_track_ids)
+    track_id = unique_track_ids(i);
+    track_index = matrix(:, 4) == track_id;
+    track_data = matrix(track_index, :);
+    if ~isempty(track_data)
+        x = track_data(:, 1);
+        y = track_data(:, 2);
+        plot(x, y, 'LineWidth', 0.2);
+    end
+end
+
+xlabel('X-coordinate');
+ylabel('Y-coordinate');
+title(['Particle Tracks 0.09A - All Tracks']);
+hold off;
