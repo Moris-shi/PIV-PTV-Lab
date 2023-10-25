@@ -13,4 +13,4 @@ The experimental picture data can be found here:
 0.25A - https://we.tl/t-YN6ikP1a35
 
 
-The codes folder contains all the MATLAB codes used for the experimental data processing. Please note that the extension PIVlab and Image processing toolbox must be installed from the add-ons section in MATLAB.
+The MATLAB codes used for the experimental data processing are included for both PIV and PTV analysis. Please note that the extension PIVlab and Image processing toolbox must be installed from the add-ons section in MATLAB.
