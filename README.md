@@ -4,7 +4,7 @@ Hello, thank you for stopping by :)
 This repositry stores experimetal data from the PIV and PTV lab carried out on the 12th of October 2023.
 
 
-The experimental picture data can be found here:
+The experimental picture data can be found here: (please click accept and download the folder)
 
 0.01A - https://we.tl/t-Hydk0uxbIP
 
